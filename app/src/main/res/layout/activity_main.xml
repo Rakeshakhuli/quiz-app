@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="278dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="#546A68"
+
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="QUIZZER"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="139dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:text="Start Quiz"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bookmark_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/bookmark_btn"
+        android:layout_width="142dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#9A3A3030"
+        android:gravity="center"
+        android:text="Bookmarks"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
